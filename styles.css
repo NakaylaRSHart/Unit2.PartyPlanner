@@ -1,38 +1,80 @@
 body{
-  background-color: gainsboro;
+  background-color: white;
   margin: 30px;
   display: flex;
   flex-direction: column;
 }
 
+h1{
+  background-color: black;
+  color: darkred;
+  padding: 30px;
+  font-size: 50px;
+  border-radius: 10px;
+}
+
+h3{
+  margin: -10px;
+  position: relative;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+p{
+  font-size: 20px;
+  color: black;
+  background-color: saddlebrown;
+  padding: 30px;
+  border-radius: 10px;
+  /* width: fit-content; */
+}
+
 ul{
   list-style-type: none;
-  text-decoration: underline 1px;
+  padding: 10px;
 }
+
+li{
+  margin-bottom: 20px;
+}
+
 
 #partyEvents{
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 30px;
   margin: 20px;
-  background-color: rgb(0, 21, 92);
-  color: aliceblue;
-  transition: box-shadow 0.3s ease-in-out;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 20px;
 }
 
-#topHeader:hover{
-  transition: 1s;
-  box-shadow: 0 0 20px 5px #00FF00;
-}
 
 button{
   color: black;
-  background-color: rgb(53, 94, 148);
+  background-color: lightgray;
   padding: 10px;
+  border-radius: 20px;
 }
 
 button:hover{
   transition: 1s;
   transform: rotate(2deg);
-  box-shadow: 0 0 20px 5px #7fcfc5;
+  box-shadow: 0 0 20px 5px darkred;
 }
+
+#description{
+  width: 200px;
+  height: 75px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+#events{
+  padding: 20px;
+  color: saddlebrown;
+}
+
+

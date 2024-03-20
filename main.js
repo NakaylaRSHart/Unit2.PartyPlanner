@@ -43,11 +43,11 @@ async function getParty(){
 
   try{
     const response = await fetch(API_URL);
-    console.log(response);
+    //console.log(response);
 
     const json = await response.json();
     state.event = json.data;
-    console.log(json.data);
+    //console.log(json.data);
   }
 
   catch(error){
@@ -62,7 +62,7 @@ function renderParties(){
     li.textContent = event.name;
     return li;
   })
-  console.log(nameListElements);
+  //console.log(nameListElements);
   nameList.replaceChildren(...nameListElements);
 
   const dateListElements = state.event.map((event) =>{
@@ -70,7 +70,7 @@ function renderParties(){
     li.textContent = event.date;
     return li;
   })
-  console.log(dateListElements);
+  //console.log(dateListElements);
   dateList.replaceChildren(...dateListElements);
 
   const locationListElements = state.event.map((event) =>{
@@ -78,7 +78,7 @@ function renderParties(){
     li.textContent = event.location;
     return li;
   })
-  console.log(locationListElements);
+  //console.log(locationListElements);
   locationList.replaceChildren(...locationListElements);
 
   const descriptionListElements = state.event.map((event) =>{
@@ -86,19 +86,7 @@ function renderParties(){
     li.textContent = event.description;
     return li;
   })
-  console.log(descriptionListElements);
+  //console.log(descriptionListElements);
   descriptionList.replaceChildren(...descriptionListElements);
-}
-
-
-
-
-
-// document.getElementById('newParty').addEventListener('click', function() {
-//   window.scrollTo({
-//       top: document.body.scrollHeight,
-//       behavior: 'smooth'
-//   });
-// });
-
+};
 
