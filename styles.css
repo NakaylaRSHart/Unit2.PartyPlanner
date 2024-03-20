@@ -1,0 +1,38 @@
+body{
+  background-color: gainsboro;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+  list-style-type: none;
+  text-decoration: underline 1px;
+}
+
+#partyEvents{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(0, 21, 92);
+  color: aliceblue;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#topHeader:hover{
+  transition: 1s;
+  box-shadow: 0 0 20px 5px #00FF00;
+}
+
+button{
+  color: black;
+  background-color: rgb(53, 94, 148);
+  padding: 10px;
+}
+
+button:hover{
+  transition: 1s;
+  transform: rotate(2deg);
+  box-shadow: 0 0 20px 5px #7fcfc5;
+}
